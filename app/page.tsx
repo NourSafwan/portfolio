@@ -7,7 +7,8 @@ import RecentProjects from "@/components/RecentProjects";
 import { navItems } from "@/data";
 import Testimonials from "@/components/Testimonials";
 import Experience from "./../components/Experience";
-import { MyApproach } from './../components/MyApproach';
+import MyApproach from "./../components/MyApproach";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Testimonials />
         <Experience />
         <MyApproach />
+        <Footer />
       </div>
     </main>
   );
