@@ -71,151 +71,124 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    bgImg: "/bg.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    iconList: [
-      {
-        id: 1,
-        name: "React",
-        image: "/re.svg",
-      },
-      {
-        id: 2,
-        name: "React",
-        image: "/re.svg",
-      },
-      {
-        id: 3,
-        name: "React",
-        image: "/re.svg",
-      },
-      {
-        id: 4,
-        name: "React",
-        image: "/re.svg",
-      },
-      {
-        id: 5,
-        name: "React",
-        image: "/re.svg",
-      },
-    ],
-    link: "https://github.com/Nourhajdin?tab=repositories",
-  },
-  {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
+    img: "/p4.svg",
     bgImg: "/bg.png",
-
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     iconList: [
       {
         id: 1,
-        name: "React",
+        name: "React.js",
         image: "/re.svg",
       },
       {
         id: 2,
-        name: "React",
+        name: "Tailwind",
         image: "/tail.svg",
       },
       {
         id: 3,
-        name: "React",
-        image: "/ts.svg",
+        name: "Three.js",
+        image: "/three.svg",
       },
       {
         id: 4,
-        name: "React",
-        image: "/stream.svg",
-      },
-      {
-        id: 5,
-        name: "React",
-        image: "/c.svg",
+        name: "Gsap",
+        image: "/gsap.svg",
       },
     ],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://apple-website-omega-two.vercel.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
+    img: "/p4.svg",
     bgImg: "/bg.png",
-
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     iconList: [
       {
         id: 1,
-        name: "React",
+        name: "React.js",
         image: "/re.svg",
       },
       {
         id: 2,
-        name: "React",
-        image: "/re.svg",
+        name: "Tailwind",
+        image: "/tail.svg",
       },
       {
         id: 3,
-        name: "React",
-        image: "/re.svg",
+        name: "Three.js",
+        image: "/three.svg",
       },
       {
         id: 4,
-        name: "React",
-        image: "/re.svg",
-      },
-      {
-        id: 5,
-        name: "React",
-        image: "/re.svg",
+        name: "Gsap",
+        image: "/gsap.svg",
       },
     ],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://apple-website-omega-two.vercel.app/",
   },
   {
     id: 4,
     title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
     img: "/p4.svg",
     bgImg: "/bg.png",
-
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     iconList: [
       {
         id: 1,
-        name: "React",
+        name: "React.js",
         image: "/re.svg",
       },
       {
         id: 2,
-        name: "React",
-        image: "/re.svg",
+        name: "Tailwind",
+        image: "/tail.svg",
       },
       {
         id: 3,
-        name: "React",
-        image: "/re.svg",
+        name: "Three.js",
+        image: "/three.svg",
       },
       {
         id: 4,
-        name: "React",
+        name: "Gsap",
+        image: "/gsap.svg",
+      },
+    ],
+    link: "https://apple-website-omega-two.vercel.app/",
+  },
+  {
+    id: 1,
+    title: "Animated Apple Iphone 3D Website",
+    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
+    img: "/p4.svg",
+    bgImg: "/bg.png",
+    iconList: [
+      {
+        id: 1,
+        name: "React.js",
         image: "/re.svg",
       },
       {
-        id: 5,
-        name: "React",
-        image: "/re.svg",
+        id: 2,
+        name: "Tailwind",
+        image: "/tail.svg",
+      },
+      {
+        id: 3,
+        name: "Three.js",
+        image: "/three.svg",
+      },
+      {
+        id: 4,
+        name: "Gsap",
+        image: "/gsap.svg",
       },
     ],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "https://apple-website-omega-two.vercel.app/",
   },
 ];
 
