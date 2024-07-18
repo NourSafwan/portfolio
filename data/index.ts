@@ -38,7 +38,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title:
+      "I specialize in building high-quality web applications with focus on performance and user experience.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,7 +50,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Tech enthusiast with a passion for development.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -71,100 +72,10 @@ export const gridItems = [
 
 export const projects = [
   {
-    id: 2,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
-    img: "/p4.svg",
-    bgImg: "/bg.png",
-    iconList: [
-      {
-        id: 1,
-        name: "React.js",
-        image: "/re.svg",
-      },
-      {
-        id: 2,
-        name: "Tailwind",
-        image: "/tail.svg",
-      },
-      {
-        id: 3,
-        name: "Three.js",
-        image: "/three.svg",
-      },
-      {
-        id: 4,
-        name: "Gsap",
-        image: "/gsap.svg",
-      },
-    ],
-    link: "https://apple-website-omega-two.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
-    img: "/p4.svg",
-    bgImg: "/bg.png",
-    iconList: [
-      {
-        id: 1,
-        name: "React.js",
-        image: "/re.svg",
-      },
-      {
-        id: 2,
-        name: "Tailwind",
-        image: "/tail.svg",
-      },
-      {
-        id: 3,
-        name: "Three.js",
-        image: "/three.svg",
-      },
-      {
-        id: 4,
-        name: "Gsap",
-        image: "/gsap.svg",
-      },
-    ],
-    link: "https://apple-website-omega-two.vercel.app/",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
-    img: "/p4.svg",
-    bgImg: "/bg.png",
-    iconList: [
-      {
-        id: 1,
-        name: "React.js",
-        image: "/re.svg",
-      },
-      {
-        id: 2,
-        name: "Tailwind",
-        image: "/tail.svg",
-      },
-      {
-        id: 3,
-        name: "Three.js",
-        image: "/three.svg",
-      },
-      {
-        id: 4,
-        name: "Gsap",
-        image: "/gsap.svg",
-      },
-    ],
-    link: "https://apple-website-omega-two.vercel.app/",
-  },
-  {
     id: 1,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects.",
-    img: "/p4.svg",
+    img: "/p-1.png",
     bgImg: "/bg.png",
     iconList: [
       {
@@ -189,6 +100,71 @@ export const projects = [
       },
     ],
     link: "https://apple-website-omega-two.vercel.app/",
+  },
+  {
+    id: 2,
+    title: "Footwear Heaven e-commerce Website",
+    des: "Created an e-commerce website using React and the powers of tailwindCss.",
+    img: "/p-2.png",
+    bgImg: "/bg.png",
+    iconList: [
+      {
+        id: 1,
+        name: "React.js",
+        image: "/re.svg",
+      },
+      {
+        id: 2,
+        name: "Vite",
+        image: "/vite.svg",
+      },
+      {
+        id: 3,
+        name: "Tailwind",
+        image: "/tail.svg",
+      },
+    ],
+    link: "https://footwear-haven.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "Alien extremely minimalist fast website",
+    des: "An extremely minimal website, using HTML and CSS only.",
+    img: "/p-3.png",
+    bgImg: "/bg.png",
+    iconList: [
+      {
+        id: 1,
+        name: "HTML",
+        image: "/html.svg",
+      },
+      {
+        id: 2,
+        name: "CSS",
+        image: "/css.svg",
+      },
+    ],
+    link: "https://html-css-templet-one.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Blue simple Website",
+    des: "Simple Website using HTML and CSS.",
+    img: "/p-4.png",
+    bgImg: "/bg.png",
+    iconList: [
+      {
+        id: 1,
+        name: "HTML",
+        image: "/html.svg",
+      },
+      {
+        id: 2,
+        name: "CSS",
+        image: "/css.svg",
+      },
+    ],
+    link: "https://html-css-tamplet-two.vercel.app/",
   },
 ];
 
@@ -201,27 +177,9 @@ export const testimonials = [
   },
   {
     quote:
-      "Collaborating with Nour was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Nour's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Nour is the ideal partner.",
-    name: "Nour Mohsen",
-    title: "front-end developer",
-  },
-  {
-    quote:
-      "Collaborating with Nour was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Nour's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Nour is the ideal partner.",
-    name: "Nour Mohsen",
-    title: "front-end developer",
-  },
-  {
-    quote:
-      "Collaborating with Nour was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Nour's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Nour is the ideal partner.",
-    name: "Nour Mohsen",
-    title: "front-end developer",
-  },
-  {
-    quote:
-      "Collaborating with Nour was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Nour's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Nour is the ideal partner.",
-    name: "Nour Mohsen",
-    title: "front-end developer",
+      "Nour is really one of the best developers I met, He makes professional and elaborate websites, working with him was very wonderful",
+    name: "Khaled Atef",
+    title: "Founder of COMPUTEX Company",
   },
 ];
 

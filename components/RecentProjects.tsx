@@ -24,7 +24,7 @@ const RecentProjects = () => {
                   <img
                     src={img}
                     alt={title}
-                    className="z-10 absolute bottom-[1px] px-5 left-1/2 -translate-x-1/2"
+                    className="z-10 absolute bottom-[1px] px-5 left-1/2 -translate-x-1/2 w-"
                   />
                 </div>
               </div>

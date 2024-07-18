@@ -33,10 +33,8 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl capitalize"
           />
           <p className="text-center capitalize md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            hi, i&apos;m <span className="text-purple">Nour</span>, a
-            full-stack javascript developer based in egypt. <br />
-            <br />i specialize in building high-quality web applications with a
-            focus on performance and user experience.
+            hi, i&apos;m <span className="text-purple">Nour</span>, a full-stack
+            javascript developer based in egypt.
           </p>
           <a href="#about">
             <MagicButton
