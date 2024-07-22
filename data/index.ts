@@ -181,6 +181,12 @@ export const testimonials = [
     name: "Khaled Atef",
     title: "Founder of COMPUTEX Company",
   },
+  {
+    quote:
+      "I have worked with Noor on more than five projects. He is someone who adapts quickly to the team and works efficiently. He possesses excellent project presentation skills and is a creative web developer.",
+    name: "Mina Midhat",
+    title: "UI/UX Designer",
+  },
 ];
 
 export const workExperience = [
