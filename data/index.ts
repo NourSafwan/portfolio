@@ -234,6 +234,6 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/nouraldin-safwan-343ab8221/",
+    link: "https://www.linkedin.com/in/noursafwan",
   },
 ];
