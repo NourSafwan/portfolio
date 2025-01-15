@@ -29,7 +29,7 @@ const Hero = () => {
           Unleashing web magic with <br />full-stack expertise
           </h2>
           <TextGenerateEffect
-            words="Bringing ideas to life with code and creativity."
+            words="Bringing ideas to life with code and creativity"
             className="text-center text-[40px] md:text-5xl lg:text-6xl capitalize"
           />
           <p className="text-center capitalize md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
