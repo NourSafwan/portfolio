@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import Experience from "./../components/Experience";
 import MyApproach from "./../components/MyApproach";
 import Footer from "@/components/Footer";
+import { ToTop } from "@/components/ui/ToTop";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Experience />
         <MyApproach />
         <Footer />
+        <ToTop />
       </div>
     </main>
   );

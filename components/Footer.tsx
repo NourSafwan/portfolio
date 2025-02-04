@@ -4,6 +4,7 @@ import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
@@ -33,7 +34,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 NourAldin Safwan
+          Copyright © {isNaN(year)? "2025" : year} NourAldin Safwan
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
