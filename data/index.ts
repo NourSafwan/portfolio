@@ -193,23 +193,23 @@ export const workExperience = [
   {
     id: 1,
     title: "Frontend Engineer",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    desc: "Assisted in the development of a web-based platform using React.js and Next.js, enhancing interactivity.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
+    title: "Backend Engineer",
+    desc: "deal with the back end servers using Node.js and Express .",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: 3,
     title: "Mobile App Dev Intern",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Backend Engineer Intern",
-    desc: "deal with the back end servers using Node.js and Express .",
-    className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
   },
   {
     id: 4,
