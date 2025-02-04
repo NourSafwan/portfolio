@@ -32,7 +32,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 mb-10 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © {isNaN(year)? "2025" : year} NourAldin Safwan
         </p>
