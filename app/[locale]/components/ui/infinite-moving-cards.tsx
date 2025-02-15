@@ -5,10 +5,11 @@ import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
-  direction = "left",
+  direction,
   speed = "fast",
   pauseOnHover = true,
   className,
+  dir
 }: {
   items: {
     quote: string;
@@ -19,6 +20,7 @@ export const InfiniteMovingCards = ({
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
   className?: string;
+  dir?: string;
 }) => {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
@@ -100,7 +102,7 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
+              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal"  dir={dir}>
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">

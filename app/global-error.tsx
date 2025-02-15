@@ -3,6 +3,8 @@
 import * as Sentry from "@sentry/nextjs";
 import NextError from "next/error";
 import { useEffect } from "react";
+import Link from "next/link";
+import { routing } from '@/i18n/routing';
 
 export default function GlobalError({ error }: { error: Error & { digest?: string } }) {
   useEffect(() => {
@@ -12,11 +14,14 @@ export default function GlobalError({ error }: { error: Error & { digest?: strin
   return (
     <html>
       <body>
-        {/* `NextError` is the default Next.js error page component. Its type
-        definition requires a `statusCode` prop. However, since the App Router
-        does not expose status codes for errors, we simply pass 0 to render a
-        generic error message. */}
-        <NextError statusCode={0} />
+        <div>
+          <h1>Page Not Found</h1>
+          <p>The page you are looking for does not exist.</p>
+          <Link href={`/${routing.defaultLocale}`}>
+            Go to the default page
+          </Link>
+        </div>
+        {/* <NextError statusCode={0} /> */}
       </body>
     </html>
   );

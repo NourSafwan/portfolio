@@ -3,8 +3,13 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
+import { useLocale, useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("main.hero");
+  const locale = useLocale();
+  const dir = locale === 'ar' ? 'rtl' : 'ltr';  // Set text direction for Arabic
+
   return (
     <div className="pb-20 pt-36" id="top">
       <div>
@@ -34,22 +39,21 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-center text-xs text-blue-100 max-w-80">
-          Unleashing web magic with <br />full-stack expertise
+          <h2 className="uppercase tracking-widest text-center text-xs text-blue-100 max-w-80" dir={dir}>
+          {t("title1")} <br />{t("title2")}
           </h2>
           <TextGenerateEffect
-            words="Bringing ideas to life with code and creativity"
+            words={t("TextGenerateEffect")}
             className="text-center text-[40px] md:text-5xl lg:text-6xl capitalize"
           />
-          <p className="text-center capitalize md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            hi, i&apos;m <span className="text-purple">Nour</span>, a Full-Stack
-            developer based in egypt.
+          <p className="text-center capitalize md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl" dir={dir}>
+            {t("p1")}<span className="text-purple">{t("p2")}</span>{t("p3")}
           </p>
           <a href="#about">
             <MagicButton
-              title="Show My Work"
+              title={t("button")}
               icon={<FaLocationArrow />}
-              position="right"
+              position={`${locale == "ar"?'left':'right'}`}
             />
           </a>
         </div>

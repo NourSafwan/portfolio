@@ -1,15 +1,32 @@
-import { projects } from "@/data";
+// import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { FaLocationArrow } from "react-icons/fa6";
+import { useLocale, useTranslations } from "next-intl";
+
+interface Project {
+  id: number;
+  title: string;
+  des: string;
+  img: string;
+  bgImg: string;
+  iconList: { id: number; name: string; image: string; }[];
+  link: string;
+}
 
 const RecentProjects = () => {
+  const t = useTranslations("main");
+  const locale = useLocale();
+  const dir = locale == 'ar' ? "rtl" : "ltr";
+  const projects = t.raw("projects") as Project[];
+
+
   return (
-    <div className="py-20" id="projects">
+    <div className="py-20" id="projects" dir={dir}>
       <h1 className="heading capitalize">
-        a small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        {t("projectsTitle.p1")}{" "}
+        <span className="text-purple">{t("projectsTitle.p2")}</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-2 mt-10">
         {projects.map(({ id, title, des, img, bgImg, iconList, link }) => (

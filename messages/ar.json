@@ -1,0 +1,245 @@
+{"main": {
+  "navItems": [
+    { "name": "من انا ؟", "link": "#about" },
+    { "name": "المشاريع", "link": "#projects" },
+    { "name": "ألآراء", "link": "#testimonials" },
+    { "name": "تواصل معي", "link": "#contact" }
+  ],
+  "hero": {
+    "title1": "أطلق العنان لسحر الويب مع",
+    "title2": "خبرة كاملة في التطوير",
+    "TextGenerateEffect": "حول الأفكار إلى واقع باستخدام الكود و الإبداع",
+    "p1": "مرحبًا، أنا ",
+    "p2": "نورالدين",
+    "p3": "، مطور مواقع كامل (Full-Stack) من مصر.",
+    "button": "عرض أعمالي"
+  },
+  "gridItems": [
+    {
+      "id": 1,
+      "title": "أعطي الأولوية للتعاون مع العملاء وتعزيز التواصل المفتوح",
+      "description": "",
+      "className": "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] select-none",
+      "imgClassName": "w-full h-full",
+      "titleClassName": "justify-end select-none",
+      "img": "/b1.jpg",
+      "spearImg": ""
+    },
+    {
+      "id": 2,
+      "title": "أنا مرن جدًا في التواصل عبر المناطق الزمنية المختلفة",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2 select-none",
+      "imgClassName": "",
+      "titleClassName": "justify-start select-none",
+      "img": "",
+      "spearImg": ""
+    },
+    {
+      "id": 3,
+      "title": "مجموعة التقنيات الخاصة بي",
+      "description": "أحاول دائمًا التحسن",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-2 select-none",
+      "imgClassName": "",
+      "titleClassName": "justify-center select-none",
+      "img": "",
+      "spearImg": ""
+    },
+    {
+      "id": 4,
+      "title": "أختص في بناء تطبيقات ويب عالية الجودة مع التركيز على الأداء وتجربة المستخدم.",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1 select-none",
+      "imgClassName": "",
+      "titleClassName": "justify-start select-none",
+      "img": "/grid.svg",
+      "spearImg": "/b4.svg"
+    },
+    { 
+      "id": 5,
+      "title": "شغوف بالتكنولوجيا والتطوير.",
+      "description": "لمحة عني",
+      "className": "md:col-span-3 md:row-span-2 select-none",
+      "imgClassName": "absolute right-0 bottom-0 md:w-96 w-60",
+      "titleClassName": "justify-center md:justify-start lg:justify-center select-none",
+      "img": "/b5.svg",
+      "spearImg": "/grid.svg"
+    },
+    {
+      "id": 6,
+      "title": "هل تريد البدء في إنشاء مشروع معًا؟",
+      "description": "",
+      "className": "lg:col-span-2 md:col-span-3 md:row-span-1 select-none",
+      "imgClassName": "",
+      "titleClassName": "justify-center md:max-w-full max-w-60 text-center select-none",
+      "img": "",
+      "spearImg": ""
+    }
+  ],
+  "email":{
+    "copy":"نسخ بريدي الإلكتروني",
+    "copied":"تم النسخ"
+  },
+  "projectsTitle":{
+    "p1":"مجموعة صغيرة من",
+    "p2":"المشاريع الحديثة"
+    },
+  "projects": [
+    {
+      "id": 1,
+      "title": "موقع ويب ثلاثي الأبعاد لهاتف آيفون",
+      "des": "أعدت إنشاء موقع ويب آيفون 15 برو من أبل، مع دمج الرسوم المتحركة من GSAP وتأثيرات ثلاثية الأبعاد باستخدام Three.js.",
+      "img": "/p-1.png",
+      "bgImg": "/bg.png",
+      "iconList": [
+        { "id": 1, "name": "React.js", "image": "/re.svg" },
+        { "id": 2, "name": "Tailwind", "image": "/tail.svg" },
+        { "id": 3, "name": "Three.js", "image": "/three.svg" },
+        { "id": 4, "name": "Gsap", "image": "/gsap.svg" }
+      ],
+      "link": "https://apple-website-omega-two.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "موقع التجارة الإلكترونية Footwear Heaven",
+      "des": "أنشأت موقعًا للتجارة الإلكترونية باستخدام React و tailwindCss.",
+      "img": "/p-2.png",
+      "bgImg": "/bg.png",
+      "iconList": [
+        { "id": 1, "name": "React.js", "image": "/re.svg" },
+        { "id": 2, "name": "Vite", "image": "/vite.svg" },
+        { "id": 3, "name": "Tailwind", "image": "/tail.svg" }
+      ],
+      "link": "https://footwear-haven.vercel.app/"
+    },
+    {
+        "id": 3,
+        "title": "موقع إتقان برو",
+        "des": "صممت موقع لشركة اتقان برو مما ادي الي زيادة عملاء الشركة بشكل ملحوظ.",
+        "img": "/p-3-ar.png",
+        "bgImg": "/bg.png",
+        "iconList": [
+            { "id": 1, "name": "Tailwind", "image": "/tail.svg" },
+            { "id": 2, "name": "NextJS", "image": "/next.svg" }
+        ],
+        "link": "https://itqanbro.vercel.app"
+    },
+    {
+        "id": 4,
+        "title": "موقع الويب السريع والبسيط للغاية Alien",
+        "des": "موقع ويب بسيط للغاية، باستخدام HTML و CSS فقط.",
+        "img": "/p-4.png",
+        "bgImg": "/bg.png",
+        "iconList": [
+            { "id": 1, "name": "HTML", "image": "/html.svg" },
+            { "id": 2, "name": "CSS", "image": "/css.svg" }
+        ],
+        "link": "https://html-css-templet-one.vercel.app/"
+    }
+  ],
+  "testimonialsTitle":{
+    "p1":"كلمات طيبة من",
+    "p2":" الأشخاص الذين تعاملوا معي"
+  },
+  "testimonials": [
+    {
+      "quote": "كان التعاون مع نور متعة مطلقة. مع احترافيته وسرعته والتزامه بتقديم نتائج استثنائية واضحة طوال مشروعنا. شغف نور بكل جانب من جوانب التطوير رائع حقًا. إذا كنت تريد رفع مستوى موقعك الإلكتروني ورفع مستوى علامتك التجارية، فإن نور هو الشريك المثالي.",
+      "name": "نور محسن",
+      "title": "مطور واجهات أمامية"
+    },
+    {
+      "quote": "نور حقًا من أفضل المطورين الذين قابلتهم، يصنع مواقع ويب احترافية ومتقنة، العمل معه كان رائعًا جدًا",
+      "name": "خالد عاطف",
+      "title": "مؤسس شركة COMPUTEX"
+    },
+    {
+      "quote": "لقد عملت مع نور في أكثر من خمسة مشاريع. إنه شخص يتكيف بسرعة مع الفريق ويعمل بكفاءة. يمتلك مهارات عرض المشاريع بشكل ممتاز وهو مطور ويب مبدع.",
+      "name": "مينا مدحت",
+      "title": "مصمم واجهة المستخدم وتجربة المستخدم"
+    }
+  ],
+  "workExperienceTitle":{
+    "p1":" خبراتي",
+    "p2":"العملية"
+  },
+  "workExperience": [
+    {
+      "id": 1,
+      "title": "مطور واجهات مواقع (Frontend)",
+      "desc": "تطوير منصات ويب باستخدام React.js و Next.js، مما يعزز التفاعلية.",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp1.svg"
+    },
+    {
+      "id": 2,
+      "title": "مطور خوادم و قواعد بيانات (Backend)",
+      "desc": "التعامل مع الخوادم باستخدام Node.js و Express.",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp3.svg"
+    },
+    {
+      "id": 3,
+      "title": "مطور تطبيقات الجوال",
+      "desc": "صممت وطورت تطبيقات الجوال لمنصات iOS و Android باستخدام React Native.",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp2.svg"
+    },
+    {
+      "id": 4,
+      "title": "مطور برامج الكمبيوتر",
+      "desc": "طورت برامج للكمبيوتر باستخدام اطار العمل المحبوب Electron.",
+      "className": "md:col-span-2",
+      "thumbnail": "/exp4.svg"
+    }
+  ],
+  "approachTitle":{
+    "p1":"نهج",
+    "p2":" العمل"
+  },
+  "approach":{
+    "one":{
+      "button":"المرحلة 1",
+      "title":"التخطيط و وضع الاستراتيجية",
+      "desc":"سنعمل معًا على رسم خريطة لأهداف موقعك الإلكتروني والجمهور المستهدف والوظائف الرئيسية. وسنناقش أمورًا مثل بنية الموقع والتنقل ومتطلبات المحتوى."
+    },
+    "two":{
+      "button":"المرحلة 2",
+      "title":"تقدم العمل",
+      "desc":"بمجرد أن نتفق على الخطة، أبدأ في تجهيز معداتي وأشرع في كتابة الكود. بدءًا من الرسومات الأولية وحتى كتابة الكود المصقول، أحرص على إطلاعك على كل خطوة على الطريق."
+    },
+    "three":{
+      "button":"المرحلة 3",
+      "title":"التطوير والإطلاق",
+      "desc":"وهنا يحدث السحر! بناءً على التصميم المعتمد، سأقوم بترجمة كل شيء إلى كود وظيفي، وبناء موقع الويب الخاص بك من البداية."
+    }
+  },
+  "footer":{
+    "title":{
+      "p1":"هل أنت مستعد لتطوير",
+      "p2":"منصتك الرقمية",
+      "p3":"إلى مستوى أرقي؟"
+    },
+    "desc":"تواصل معي اليوم ودعنا نناقش كيف يمكنني مساعدتك في تحقيق أهدافك.",
+    "button":"دعنا نتواصل",
+    "copyright":"حقوق الطبع والنشر",
+    "name":"نورالدين صفوان"
+  },
+  "socialMedia": [
+    {
+      "id": 1,
+      "img": "/git.svg",
+      "link": "https://github.com/NourSafwan"
+    },
+    {
+      "id": 2,
+      "img": "/x.svg",
+      "link": "https://x.com/NourAld60185624"
+    },
+    {
+      "id": 3,
+      "img": "/link.svg",
+      "link": "https://www.linkedin.com/in/noursafwan"
+    }
+  ]
+}
+}

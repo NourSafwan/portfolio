@@ -2,20 +2,25 @@
 import React from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
-import MagicButton from "./ui/MagicButton";
+import { CanvasRevealEffect } from "@/app/[locale]/components/ui/canvas-reveal-effect";
+// import MagicButton from "./ui/MagicButton";
+import { useTranslations, useLocale } from "next-intl";
 
 const MyApproach = () => {
+  const t = useTranslations("main");
+    const locale = useLocale();
+    const dir = locale == 'ar' ? "rtl" : "ltr";
+  
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20" dir={dir}>
       <h1 className="heading">
-        My <span className="text-purple">Approach</span>
+        {t("approachTitle.p1")} <span className="text-purple">{t("approachTitle.p2")}</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning & Strategy"
-          icon={<OuterIcon title="Phase 1" />}
-          description="We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements."
+          title={t("approach.one.title")}
+          icon={<OuterIcon title={t("approach.one.button")} />}
+          description={t("approach.one.desc")}
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -23,9 +28,9 @@ const MyApproach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<OuterIcon title="Phase 2" />}
-          description="Once we agree on the plan, I get my gear and dive into coding. From initial sketches to polished code, I keep you updated every step of the way."
+          title={t("approach.two.title")}
+          icon={<OuterIcon title={t("approach.two.button")} />}
+          description={t("approach.two.desc")}
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -38,9 +43,9 @@ const MyApproach = () => {
           />
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<OuterIcon title="Phase 3" />}
-          description="This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up."
+          title={t("approach.three.title")}
+          icon={<OuterIcon title={t("approach.three.button")} />}
+          description={t("approach.three.desc")}
         >
           <CanvasRevealEffect
             animationSpeed={3}
