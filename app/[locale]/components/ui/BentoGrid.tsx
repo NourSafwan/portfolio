@@ -191,7 +191,7 @@ export const BentoGridItem = ({
                 title={copied ? t("copied") : t("copy")}
                 icon={<IoCopyOutline />}
                 position={`${locale == "ar"?'right':'left'}`}
-                otherClasses="!bg-[#151a31]"
+                otherClasses={copied ? "!bg-transparent" : "!bg-[#151a31]"}
                 handleClick={handleCopy}
               />
             </div>
