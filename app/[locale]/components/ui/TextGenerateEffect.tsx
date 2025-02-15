@@ -27,7 +27,7 @@ export const TextGenerateEffect = ({
   }, [scope.current]);
 
   const locale = useLocale();
-  const n = locale == "ar" ? "5" : "4";
+  const n = locale == "ar" ? 5 : 4;
 
   const renderWords = () => {
     return (
