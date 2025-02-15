@@ -119,8 +119,9 @@
       "img": "/p-3-en.png",
       "bgImg": "/bg.png",
       "iconList": [
-        { "id": 1, "name": "NextJS", "image": "/next.svg" },
-        { "id": 2, "name": "Tailwind", "image": "/tail.svg" }
+        { "id": 1, "name": "Tailwind", "image": "/tail.svg" },
+        { "id": 2, "name": "NextJS", "image": "/next.svg" },
+        { "id": 3, "name": "next-intl", "image": "/next-intl.png" }
       ],
       "link": "https://itqanbro.vercel.app"
     },
