@@ -6,12 +6,12 @@
     { "name": "Contact", "link": "#contact" }
   ],
   "hero":{
-    "title1":"Unleashing web magic with",
+    "title1":"Unleash web magic with",
     "title2":"full-stack expertise",
-    "TextGenerateEffect":"Bring ideas to life with code and creativity",
+    "TextGenerateEffect":"Explore digital worlds filled with creativity.",
     "p1":"hi, i'm ",
     "p2":"Nour",
-    "p3":", a Full-Stack web developer based in egypt.",
+    "p3":", a Full-Stack developer based in egypt.",
     "button":"Show My Work"
   },
   "gridItems": [
@@ -149,7 +149,7 @@
       "title": "front-end developer"
     },
     {
-      "quote": "Nour is really one of the best developers I met, He makes professional and elaborate websites, working with him was very wonderful",
+      "quote": "Nour is really one of the best developers I met, He makes professional and elaborate websites, working with him was very wonderful.",
       "name": "Khaled Atef",
       "title": "Founder of COMPUTEX Company"
     },

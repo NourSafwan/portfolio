@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 export const InfiniteMovingCards = ({
   items,
   direction,
-  speed = "fast",
+  speed = "normal",
   pauseOnHover = true,
   className,
   dir
@@ -97,12 +97,12 @@ export const InfiniteMovingCards = ({
             }}
             key={idx}
           >
-            <blockquote>
+            <blockquote dir={dir}>
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal"  dir={dir}>
+              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal flex text-start"  dir={dir}>
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
@@ -114,7 +114,7 @@ export const InfiniteMovingCards = ({
                     className="rounded-full"
                   />
                 </div>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 text-start">
                   <span className=" text-xl leading-[1.6] text-white font-bold">
                     {item.name}
                   </span>

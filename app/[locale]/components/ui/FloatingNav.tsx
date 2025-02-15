@@ -71,9 +71,9 @@ export const FloatingNav = ({
             href={navItem.link}
             className={cn(
               "relative dark:text-neutral-50 items-center flex text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-            )+`${idx == 0 ? " ":" "} text-center mx-4`}
+            )+`${idx == 0 ? " ":" "} text-center mx-2`}
           >
-            <span className="text-sm">{navItem.name}</span>
+            <span className="text-xs md:text-sm">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>

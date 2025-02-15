@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/utils/cn";
+import { useLocale } from "next-intl";
 
 export const TextGenerateEffect = ({
   words,
@@ -25,6 +26,8 @@ export const TextGenerateEffect = ({
     );
   }, [scope.current]);
 
+  const locale = useLocale();
+
   const renderWords = () => {
     return (
       <motion.div ref={scope}>
@@ -32,9 +35,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${
-                idx > 6 ? "text-purple" : "text-white "
-              } opacity-0`}
+              className={`${idx > (locale == "ar" ? "5" : "4") ? "text-purple" : "text-white "} opacity-0`}
             >
               {word}{" "}
             </motion.span>
