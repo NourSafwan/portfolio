@@ -28,7 +28,6 @@ const Grid = () => {
   const t = useTranslations("main");
   const gridItems = t.raw("gridItems") as GridItem[]; // Cast the raw data to GridItem[]
 
-  console.log(gridItems);
   return (
     <section id="about">
       <BentoGrid>
