@@ -27,6 +27,7 @@ export const TextGenerateEffect = ({
   }, [scope.current]);
 
   const locale = useLocale();
+  const n = locale == "ar" ? "5" : "4";
 
   const renderWords = () => {
     return (
@@ -35,7 +36,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${idx > (locale == "ar" ? "5" : "4") ? "text-purple" : "text-white "} opacity-0`}
+              className={`${idx > n ? "text-purple" : "text-white "} opacity-0`}
             >
               {word}{" "}
             </motion.span>
