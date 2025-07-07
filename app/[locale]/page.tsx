@@ -1,4 +1,3 @@
-"use client";
 
 import Hero from "@/app/[locale]/components/Hero";
 import Grid from "@/app/[locale]/components/Grid";
