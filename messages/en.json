@@ -233,13 +233,13 @@
     },
     {
       "id": 2,
-      "img": "/x.svg",
-      "link": "https://x.com/NourAld60185624"
+      "img": "/linkedin.svg",
+      "link": "https://www.linkedin.com/in/noursafwan"
     },
     {
       "id": 3,
-      "img": "/link.svg",
-      "link": "https://www.linkedin.com/in/noursafwan"
+      "img": "/telegram.svg",
+      "link": "https://t.me/N0urAldin"
     }
   ]
 },
