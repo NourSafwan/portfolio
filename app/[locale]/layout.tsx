@@ -56,6 +56,12 @@ export async function generateMetadata({
         'ar': '/ar',
       },
     },
+
+    // --- Social Media & SEO Verification ---
+    verification: {
+      google: 'eowMii-dPiddXw2PZNrpyI0d3SiY8akmQOAFnzDdbO8',
+    },
+
     
     // --- Social Media Sharing (Open Graph) ---
     openGraph: {
