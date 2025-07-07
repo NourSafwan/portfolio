@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://noursafwan.vercel.app/sitemap-0.xml</loc></sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://noursafwan.vercel.app/en</loc>
+    <lastmod>2025-07-07T23:34:55.806Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://noursafwan.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://noursafwan.vercel.app/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://noursafwan.vercel.app/en"/>
+  </url>
+  <url>
+    <loc>https://noursafwan.vercel.app/ar</loc>
+    <lastmod>2025-07-07T23:34:55.807Z</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://noursafwan.vercel.app/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://noursafwan.vercel.app/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://noursafwan.vercel.app/en"/>
+  </url>
+</urlset>

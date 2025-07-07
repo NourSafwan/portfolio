@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "node ./generate-sitemap.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^9.108.3",
@@ -19,7 +20,6 @@
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.4",
     "next-intl": "^3.26.3",
-    "next-sitemap": "^4.2.3",
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18",
