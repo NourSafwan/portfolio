@@ -9,9 +9,9 @@
     "title1":"Unleash web magic with",
     "title2":"full-stack expertise",
     "TextGenerateEffect":"Explore digital worlds filled with creativity.",
-    "p1":"hi, i'm ",
+    "p1":"Hi, I'm ",
     "p2":"Nour",
-    "p3":", a Full-Stack developer based in egypt.",
+    "p3":", a Full-Stack developer based in Egypt.",
     "button":"Show My Work"
   },
   "gridItems": [
@@ -38,7 +38,7 @@
     {
       "id": 3,
       "title": "My tech stack",
-      "description": "I constantly try to improve",
+      "description": "Committed to continuous learning and improvement",
       "className": "lg:col-span-2 md:col-span-3 md:row-span-2 select-none",
       "imgClassName": "",
       "titleClassName": "justify-center select-none",
@@ -140,7 +140,7 @@
   ],
   "testimonialsTitle":{
     "p1":"Kind words from ",
-    "p2":" people dealt with me"
+    "p2":" satisfied clients"
   },
   "testimonials": [
     {
@@ -167,14 +167,14 @@
     {
       "id": 1,
       "title": "Frontend Developer",
-      "desc": "Assisted in the development of a web-based platform using 'React.js' and 'Next.js', enhancing interactivity.",
+      "desc": "Developed and enhanced interactive web platforms using React.js and Next.js, focusing on user experience.",
       "className": "md:col-span-2",
       "thumbnail": "/exp1.svg"
     },
     {
       "id": 2,
       "title": "Backend Developer",
-      "desc": "deal with the back end servers using 'Node.js' and 'Express' .",
+      "desc": "Engineered and maintained server-side applications and APIs using Node.js and Express.",
       "className": "md:col-span-2",
       "thumbnail": "/exp3.svg"
     },
@@ -188,7 +188,7 @@
     {
       "id": 4,
       "title": "Desktop Developer",
-      "desc": "I developed computer software using the popular framework 'Electron'.",
+      "desc": "Developed cross-platform desktop applications using the Electron framework.",
       "className": "md:col-span-2",
       "thumbnail": "/exp4.svg"
     }
@@ -242,4 +242,10 @@
       "link": "https://www.linkedin.com/in/noursafwan"
     }
   ]
-}}
+},
+"Metadata": {
+    "title": "Nour Safwan | Full-Stack Web Developer",
+    "description": "The official portfolio of Nour Aldin Safwan, a Full-Stack Developer specializing in building modern, high-performance applications using TypeScript, React, Next.js, and Node.js. Explore my work and get in touch.",
+    "ogDescription": "Explore the portfolio of Nour Aldin Safwan, a developer specializing in TypeScript, React, Next.js, and Node.js."
+  }
+}

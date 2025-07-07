@@ -38,7 +38,7 @@
     {
       "id": 3,
       "title": "مجموعة التقنيات الخاصة بي",
-      "description": "أحاول دائمًا التحسن",
+      "description": "ملتزم بالتحسين المستمر وتعلّم كل ما هو جديد",
       "className": "lg:col-span-2 md:col-span-3 md:row-span-2 select-none",
       "imgClassName": "",
       "titleClassName": "justify-center select-none",
@@ -115,7 +115,7 @@
     {
         "id": 3,
         "title": "موقع إتقان برو",
-        "des": "صممت موقع لشركة اتقان برو مما ادي الي زيادة عملاء الشركة بشكل ملحوظ.",
+        "des": "صممت موقع لشركة اتقان برو مما أدى الي زيادة عملاء الشركة بشكل ملحوظ.",
         "img": "/p-3-ar.png",
         "bgImg": "/bg.png",
         "iconList": [
@@ -140,7 +140,7 @@
   ],
   "testimonialsTitle":{
     "p1":"كلمات طيبة من",
-    "p2":" الأشخاص الذين تعاملوا معي"
+    "p2":" عملاء سعداء"
   },
   "testimonials": [
     {
@@ -167,28 +167,28 @@
     {
       "id": 1,
       "title": "مطور واجهات مواقع (Frontend)",
-      "desc": "تطوير منصات ويب باستخدام React.js و Next.js، مما يعزز التفاعلية.",
+      "desc": "قمت بتطوير وتحسين منصات ويب تفاعلية باستخدام React.js و Next.js، مع التركيز على تقديم تجربة مستخدم مميزة.",
       "className": "md:col-span-2",
       "thumbnail": "/exp1.svg"
     },
     {
       "id": 2,
-      "title": "مطور خوادم و قواعد بيانات (Backend)",
-      "desc": "التعامل مع الخوادم باستخدام Node.js و Express.",
+      "title": "مطور خوادم وقواعد بيانات (Backend)",
+      "desc": "قمت ببناء وهندسة تطبيقات الخادم وواجهات برمجة التطبيقات (APIs) باستخدام Node.js و Express.",
       "className": "md:col-span-2",
       "thumbnail": "/exp3.svg"
     },
     {
       "id": 3,
       "title": "مطور تطبيقات الجوال",
-      "desc": "صممت وطورت تطبيقات الجوال لمنصات iOS و Android باستخدام React Native.",
+      "desc": "صممت وطورت تطبيقات جوال عالية الأداء ومتعددة المنصات (iOS & Android) باستخدام إطار العمل React Native.",
       "className": "md:col-span-2",
       "thumbnail": "/exp2.svg"
     },
     {
       "id": 4,
       "title": "مطور برامج الكمبيوتر",
-      "desc": "طورت برامج للكمبيوتر باستخدام اطار العمل المحبوب Electron.",
+      "desc":"قمت بتطوير برامج سطح المكتب متعددة المنصات باستخدام إطار العمل Electron.",
       "className": "md:col-span-2",
       "thumbnail": "/exp4.svg"
     }
@@ -218,7 +218,7 @@
     "title":{
       "p1":"هل أنت مستعد لتطوير",
       "p2":"منصتك الرقمية",
-      "p3":"إلى مستوى أرقي؟"
+      "p3":"إلى المستوى التالي؟"
     },
     "desc":"تواصل معي اليوم ودعنا نناقش كيف يمكنني مساعدتك في تحقيق أهدافك.",
     "button":"دعنا نتواصل",
@@ -242,5 +242,10 @@
       "link": "https://www.linkedin.com/in/noursafwan"
     }
   ]
-}
+},
+  "Metadata": {
+    "title": "نور صفوان | مطور ويب متكامل (Full-Stack)",
+    "description": "الملف الشخصي لنور الدين صفوان، مطور ويب متكامل متخصص في بناء تطبيقات حديثة وعالية الأداء باستخدام TypeScript, React, Next.js, و Node.js. تصفح أعمالي وتواصل معي.",
+    "ogDescription": "تصفح الملف الشخصي لنور الدين صفوان، مطور متخصص في TypeScript, React, Next.js, و Node.js."
+  }
 }

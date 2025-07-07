@@ -43,8 +43,8 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 mb-10 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light" dir={dir}>
+      <div className="flex mt-16 mb-10 md:flex-row flex-col-reverse justify-between items-center">
+        <p className="md:text-base text-sm md:font-normal font-light pt-7" dir={dir}>
         {t("footer.copyright")} © {isNaN(year)? "2025" : year} {t("footer.name")}
         </p>
 

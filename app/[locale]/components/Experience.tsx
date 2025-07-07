@@ -36,19 +36,19 @@ const Experience = () => {
                 "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
               borderRadius: `1.75rem`,
             }}
-            className="flex-1 text-white border-slate-800"
+            className="flex-1 text-white border-slate-800 "
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2" dir={dir}>
+            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 w-full px-4 md:px-8 items-center md:items-start" dir={dir}>
               <img
                 src={card.thumbnail}
                 alt={card.thumbnail}
                 className="lg:w-32 md:w-20 w-16"
               />
-              <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
+              <div className="lg:ms-5 ">
+                <h1 className="text-center md:text-start text-xl md:text-2xl font-bold">
                   {card.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                <p className="text-center md:text-start text-white-100 mt-3 font-semibold">
                   {card.desc}
                 </p>
               </div>
