@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postbuild": "node ./generate-sitemap.mjs"
+    "lint": "next lint"
   },
   "dependencies": {
     "@react-three/drei": "^9.108.3",
