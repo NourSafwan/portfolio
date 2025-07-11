@@ -3,7 +3,7 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import GridGlobe from "./GridGlobe";
 import Lottie from "react-lottie";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
@@ -49,6 +49,32 @@ export const BentoGridItem = ({
   spearImg?: string;
 }) => {
   const [copied, setCopied] = useState(false);
+  const [isGlobeVisible, setIsGlobeVisible] = useState(false);
+  const gridItemRef = useRef(null);
+
+  useEffect(() => {
+    if (id !== 2) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsGlobeVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "100px" }
+    );
+
+    if (gridItemRef.current) {
+      observer.observe(gridItemRef.current);
+    }
+
+    return () => {
+      if (gridItemRef.current) {
+        observer.unobserve(gridItemRef.current);
+      }
+    };
+  }, [gridItemRef, id]);
 
   const handleCopy = () => {
     navigator.clipboard.writeText("nouraldin374@gmail.com");
@@ -62,6 +88,7 @@ export const BentoGridItem = ({
 
   return (
     <div
+      ref={gridItemRef}
       className={cn(
         "relative overflow-hidden row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
         className
@@ -117,7 +144,7 @@ export const BentoGridItem = ({
           <div dir={dir} className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 ">
             {title}
           </div>
-          {id === 2 && <GridGlobe />}
+          {id === 2 && isGlobeVisible && <GridGlobe />}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="absolute w-full h-full techBg"/>

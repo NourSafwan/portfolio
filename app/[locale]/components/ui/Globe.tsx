@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
-import { useThree, Object3DNode, Canvas, extend } from "@react-three/fiber";
+import { useThree, Object3DNode, Canvas, extend, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "@/data/globe.json";
 declare module "@react-three/fiber" {
@@ -202,12 +202,13 @@ export function Globe({ globeConfig, data }: WorldProps) {
       );
   };
 
-  useEffect(() => {
-    if (!globeRef.current || !globeData) return;
-
-    const interval = setInterval(() => {
+  const frameCount = useRef(0);
+  useFrame(() => {
+    // Update rings every 2 seconds (120 frames at 60fps)
+    if (frameCount.current % 120 === 0) {
       if (!globeRef.current || !globeData) return;
-      numbersOfRings = genRandomNumbers(
+
+      const numbersOfRings = genRandomNumbers(
         0,
         data.length,
         Math.floor((data.length * 4) / 5)
@@ -216,12 +217,9 @@ export function Globe({ globeConfig, data }: WorldProps) {
       globeRef.current.ringsData(
         globeData.filter((d, i) => numbersOfRings.includes(i))
       );
-    }, 2000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [globeRef.current, globeData]);
+    }
+    frameCount.current++;
+  });
 
   return (
     <>
