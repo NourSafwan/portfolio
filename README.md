@@ -73,7 +73,8 @@ This is a modern, multilingual portfolio website built with [Next.js](https://ne
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/99184393/277612892-3e5e6e2e-7e2e-4e2c-8e6b-7e2e2e2e2e2e.png" alt="3D Globe Screenshot" width="700" />
+   <img width=90% alt="Globe gif" src="https://noursafwan.vercel.app/gifs/globe-gif.gif" />
+   <img width=90% alt="animated card gif" src="https://noursafwan.vercel.app/gifs/animated-card-gif.gif" />
 </p>
 
 ## Deployment
