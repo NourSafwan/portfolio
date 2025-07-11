@@ -1,9 +1,10 @@
-// import { projects } from "@/data";
+// import { projects } from "@/data}";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import { FaLocationArrow } from "react-icons/fa6";
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 
 interface Project {
   id: number;
@@ -37,11 +38,20 @@ const RecentProjects = () => {
             <PinContainer title="Visit" href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden  mb-10">
                 <div className="w-full h-full overflow-hidden rounded-3xl  ">
-                  <img src={bgImg} alt="bg-img" />
-                  <img
+                  <Image
+                    src={bgImg}
+                    alt="bg-img"
+                    width={570}
+                    height={320}
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                  <Image
                     src={img}
                     alt={title}
+                    width={570}
+                    height={320}
                     className="z-10 absolute bottom-[1px] px-5 left-1/2 -translate-x-1/2 w-"
+                    style={{ objectFit: "contain" }}
                   />
                 </div>
               </div>
