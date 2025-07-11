@@ -1,6 +1,24 @@
 # Nour Safwan Portfolio
 
+<p align="center">
+  <img src="https://noursafwan.vercel.app/preview.png" alt="Portfolio Preview" width="700" />
+</p>
+
 This is a modern, multilingual portfolio website built with [Next.js](https://nextjs.org/), featuring advanced UI/UX, 3D globe visualizations, dark/light theme support, and full internationalization (English & Arabic).
+
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vercel/next.js/canary/examples/app-router/public/vercel.svg" alt="Next.js Logo" width="120" />
+  &nbsp;&nbsp;
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Three.js_Icon.svg" alt="Three.js Logo" width="60" />
+  &nbsp;&nbsp;
+  <img src="https://tailwindcss.com/_next/static/media/mark.b6b9e1e8.svg" alt="Tailwind CSS Logo" width="60" />
+  &nbsp;&nbsp;
+  <img src="https://www.svgrepo.com/show/354431/framer-motion.svg" alt="Framer Motion Logo" width="60" />
+</p>
+
+---
 
 ## Features
 
@@ -45,6 +63,16 @@ This is a modern, multilingual portfolio website built with [Next.js](https://ne
 
 - **Translations:** Edit translation files in your i18n setup.
 - **Projects/Experience:** Update the content in your translation JSON or data files.
+
+## Screenshots
+
+<p align="center">
+  <img src="https://noursafwan.vercel.app/preview.png" alt="Homepage Screenshot" width="700" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/99184393/277612892-3e5e6e2e-7e2e-4e2c-8e6b-7e2e2e2e2e2e.png" alt="3D Globe Screenshot" width="700" />
+</p>
 
 ## Deployment
 
