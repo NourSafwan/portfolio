@@ -73,7 +73,10 @@ This is a modern, multilingual portfolio website built with [Next.js](https://ne
 </p>
 
 <p align="center">
-  ![globe-gif](https://github.com/user-attachments/assets/9be3df97-353a-4f3d-a6b6-9e9fa1305136)
+    <img width=90% alt="Globe Gif" src="https://github.com/user-attachments/assets/9be3df97-353a-4f3d-a6b6-9e9fa1305136" />
+
+
+  
 </p>
 
 ## Deployment
