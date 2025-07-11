@@ -9,13 +9,13 @@ This is a modern, multilingual portfolio website built with [Next.js](https://ne
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/vercel/next.js/canary/examples/app-router/public/vercel.svg" alt="Next.js Logo" width="120" />
+  <img src="https://noursafwan.vercel.app/next.svg" alt="Next.js Logo" width="60" />
   &nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Three.js_Icon.svg" alt="Three.js Logo" width="60" />
+  <img src="https://noursafwan.vercel.app/next-intl.png" alt="next-intl Logo" width="60" />
   &nbsp;&nbsp;
-  <img src="https://tailwindcss.com/_next/static/media/mark.b6b9e1e8.svg" alt="Tailwind CSS Logo" width="60" />
+  <img src="https://noursafwan.vercel.app/three.svg" alt="Three.js Logo" width="60" />
   &nbsp;&nbsp;
-  <img src="https://www.svgrepo.com/show/354431/framer-motion.svg" alt="Framer Motion Logo" width="60" />
+  <img src="https://noursafwan.vercel.app/tail.svg" alt="Tailwind CSS Logo" width="60" />
 </p>
 
 ---
@@ -67,11 +67,13 @@ This is a modern, multilingual portfolio website built with [Next.js](https://ne
 ## Screenshots
 
 <p align="center">
-  <img src="https://noursafwan.vercel.app/preview.png" alt="Homepage Screenshot" width="700" />
+  <img width=45% alt="Screenshot in English language" src="https://github.com/user-attachments/assets/baed20bd-f928-4367-bb06-d0b252c12b99" />
+    &nbsp;&nbsp;
+  <img width=45% alt="Screenshot in Arabic language" src="https://github.com/user-attachments/assets/ae65b4f9-ffd4-4aea-8310-a49713578d89" />
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/99184393/277612892-3e5e6e2e-7e2e-4e2c-8e6b-7e2e2e2e2e2e.png" alt="3D Globe Screenshot" width="700" />
+  ![globe-gif](https://github.com/user-attachments/assets/9be3df97-353a-4f3d-a6b6-9e9fa1305136)
 </p>
 
 ## Deployment
@@ -85,7 +87,6 @@ Deploy easily on [Vercel](https://vercel.com/) for best performance and global C
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 - [Framer Motion](https://www.framer.com/motion/)
 - [next-intl](https://github.com/amannn/next-intl)
-- [next-themes](https://github.com/pacocoursey/next-themes)
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ---
