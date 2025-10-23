@@ -127,15 +127,17 @@
     },
     {
       "id": 4,
-      "title": "Alien extremely minimalist fast website",
-      "des": "An extremely minimal website, using HTML and CSS only.",
+      "title": "Batal Al-Sokkar - Smart Diabetes Management",
+      "des": "A comprehensive diabetes management app with intelligent insulin calculations, food library, and real-time glucose tracking.",
       "img": "/p-4.png",
       "bgImg": "/bg.png",
       "iconList": [
-        { "id": 1, "name": "HTML", "image": "/html.svg" },
-        { "id": 2, "name": "CSS", "image": "/css.svg" }
+        { "id": 1, "name": "React.js", "image": "/re.svg" },
+        { "id": 2, "name": "NextJS", "image": "/next.svg" },
+        { "id": 3, "name": "TypeScript", "image": "/ts.svg" },
+        { "id": 4, "name": "Tailwind", "image": "/tail.svg" }
       ],
-      "link": "https://html-css-templet-one.vercel.app/"
+      "link": "https://batalsokkar.vercel.app/"
     }
   ],
   "testimonialsTitle":{
