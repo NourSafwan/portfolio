@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Cairo } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
@@ -13,6 +13,10 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 const cairo = Cairo({ subsets: ["arabic"], weight: "400" });
 
+export const viewport: Viewport = {
+  themeColor: "#0F172A",
+};
+
 // --- Dynamic Metadata Setup ---
 // This is the single, correct way to handle metadata for your multilingual site.
 export async function generateMetadata({
@@ -25,8 +29,7 @@ export async function generateMetadata({
   return {
     // --- Static Metadata (now inside generateMetadata) ---
     metadataBase: new URL("https://noursafwan.vercel.app"),
-    themeColor: '#0F172A', // A dark color matching your theme
-    manifest: '/manifest.json',
+    manifest: "/manifest.json",
 
     // --- Dynamic Properties (based on locale) ---
     title: {
@@ -35,43 +38,68 @@ export async function generateMetadata({
     },
     description: t("description"),
     keywords: [
-        // Personal Names
-        'Nour Safwan', 'Nour Aldin Safwan', 'نور صفوان', 'نور الدين صفوان',
-        // Roles
-        'Full Stack Developer', 'Backend Developer', 'Frontend Developer', 'Web Designer', 'UI/UX Designer',
-        'مطور ويب متكامل', 'مطور باك اند', 'مطور فرونت اند', 'مصمم مواقع', 'مصمم UI/UX',
-        // Core Technologies
-        'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Node.js', 'Next.js', 'React', 'Express.js',
-        // Databases & APIs
-        'MongoDB', 'SQL', 'PostgreSQL', 'Prisma', 'API Development', 'REST API',
-        // Additional Tools & Skills
-        'Figma', 'Responsive Design', 'Authentication', 'JWT'
+      // Personal Names
+      "Nour Safwan",
+      "Nour Aldin Safwan",
+      "نور صفوان",
+      "نور الدين صفوان",
+      // Roles
+      "Full Stack Developer",
+      "Backend Developer",
+      "Frontend Developer",
+      "Web Designer",
+      "UI/UX Designer",
+      "مطور ويب متكامل",
+      "مطور باك اند",
+      "مطور فرونت اند",
+      "مصمم مواقع",
+      "مصمم UI/UX",
+      // Core Technologies
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Node.js",
+      "Next.js",
+      "React",
+      "Express.js",
+      // Databases & APIs
+      "MongoDB",
+      "SQL",
+      "PostgreSQL",
+      "Prisma",
+      "API Development",
+      "REST API",
+      // Additional Tools & Skills
+      "Figma",
+      "Responsive Design",
+      "Authentication",
+      "JWT",
     ],
-    
+
     // --- Internationalization & SEO ---
     alternates: {
       canonical: `/${locale}`,
       languages: {
-        'en': '/en',
-        'ar': '/ar',
+        en: "/en",
+        ar: "/ar",
       },
     },
 
     // --- Social Media & SEO Verification ---
     verification: {
-      google: 'eowMii-dPiddXw2PZNrpyI0d3SiY8akmQOAFnzDdbO8',
+      google: "eowMii-dPiddXw2PZNrpyI0d3SiY8akmQOAFnzDdbO8",
     },
 
-    
     // --- Social Media Sharing (Open Graph) ---
     openGraph: {
       title: t("title"),
       description: t("ogDescription"),
       url: `/${locale}`,
-      siteName: 'Nour Safwan Portfolio',
+      siteName: "Nour Safwan Portfolio",
       images: [
         {
-          url: '/preview.png', // This relative path uses metadataBase
+          url: "/preview.png", // This relative path uses metadataBase
           width: 1200,
           height: 630,
         },
@@ -85,13 +113,11 @@ export async function generateMetadata({
 // --- Root Layout Component ---
 export default async function LocaleLayout({
   children,
-  params,
+  params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const { locale } = params;
-
   // Validate the incoming locale
   if (!routing.locales.includes(locale as Locale)) {
     notFound();

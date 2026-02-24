@@ -2,9 +2,7 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import GridGlobe from "./GridGlobe";
-import Lottie from "react-lottie";
 import { useState, useEffect, useRef } from "react";
-import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { useLocale, useTranslations } from "next-intl";
@@ -21,7 +19,7 @@ export const BentoGrid = ({
     <div
       className={cn(
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
-        className
+        className,
       )}
     >
       {children}
@@ -55,6 +53,7 @@ export const BentoGridItem = ({
   useEffect(() => {
     if (id !== 2) return;
 
+    const node = gridItemRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -62,16 +61,16 @@ export const BentoGridItem = ({
           observer.disconnect();
         }
       },
-      { rootMargin: "100px" }
+      { rootMargin: "100px" },
     );
 
-    if (gridItemRef.current) {
-      observer.observe(gridItemRef.current);
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (gridItemRef.current) {
-        observer.unobserve(gridItemRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, [gridItemRef, id]);
@@ -82,16 +81,15 @@ export const BentoGridItem = ({
   };
 
   const locale = useLocale();
-  const dir = locale == 'ar'? 'rtl' : 'ltr';
+  const dir = locale == "ar" ? "rtl" : "ltr";
   const t = useTranslations("main.email");
-
 
   return (
     <div
       ref={gridItemRef}
       className={cn(
         "relative overflow-hidden row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
-        className
+        className,
       )}
       style={{
         background: "rgb(4,7,29)",
@@ -132,25 +130,30 @@ export const BentoGridItem = ({
           </BackgroundGradientAnimation>
         )}
         <div
-          
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 text-center"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 text-center",
           )}
         >
-          <div dir={dir} className="font-sans font-extralight text-[#c1c2d3]  text-sm md:text-xs lg:text-base z-10 max-w-96">
+          <div
+            dir={dir}
+            className="font-sans font-extralight text-[#c1c2d3]  text-sm md:text-xs lg:text-base z-10 max-w-96"
+          >
             {description}
           </div>
-          <div dir={dir} className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 ">
+          <div
+            dir={dir}
+            className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10 "
+          >
             {title}
           </div>
           {id === 2 && isGlobeVisible && <GridGlobe />}
           {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              <div className="absolute w-full h-full techBg"/>
+              <div className="absolute w-full h-full techBg" />
               <div className="flex flex-col gap-3 lg:gap-10">
                 {["Animations", "HTML", "CSS"].map((item: string) => (
-                  <span 
+                  <span
                     key={item}
                     className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 bg-[#10132E] rounded-lg text-center"
                   >
@@ -222,7 +225,7 @@ export const BentoGridItem = ({
               <MagicButton
                 title={copied ? t("copied") : t("copy")}
                 icon={<IoCopyOutline />}
-                position={`${locale == "ar"?'right':'left'}`}
+                position={`${locale == "ar" ? "right" : "left"}`}
                 otherClasses={copied ? "!bg-transparent" : "!bg-[#151a31]"}
                 handleClick={handleCopy}
               />
