@@ -38,7 +38,7 @@ const Footer = () => {
         <p className="text-white-200 md:mt-10 my-5 text-center">
         {t("footer.desc")}
         </p>
-        <a href="mailto:nouraldin374@gmail.com">
+        <a href="mailto:noursafwan.dev@gmail.com">
           <MagicButton
             title={t("footer.button")}
             icon={<FaLocationArrow />}
